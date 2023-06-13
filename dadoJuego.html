@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>La Morocha</title>
+</head>
+<body class="body_index_comprar">
+    <div class="div_index">
+        <header>
+            <nav class="nav_comprar">
+                
+                <h1 class="title_index"><a class="nav_comprar_letras" href="index.html">Casino La Morocha</a>
+                <span class="span_comprar"><a class="nav_comprar_letras" href="index.html">Inicio</a></span>
+                <div class="saldo_container span_comprar2" >
+                    <span  style="color: aliceblue;">Saldo:</span>
+                    <input id="input_saldo" type="number" disabled="" >
+                    <button><a href="saldo.html">Cargar saldo</a></button>
+                </div>
+            </nav>
+        </header>
+        <main class="main_juego_dados">
+            <h2 class="titulo_juego_dado">Dados</h2>
+            <p class="introduccion_juego_dado"> El juego consiste en elegir el número del dado (1-6) que crees que saldrá. 
+                Debes realizar una apuesta, y si al tirar el dado el número que salió coincide con el número apostado ganaras 3 veces más de 
+                lo apostado.</p>
+            <div class="juego_dado_container">
+                <div class="juego_container">
+                    <div class="contenido_juego_dado">
+                        <div class="labels_container">
+                            <label for="">Dado a salir:</label>
+                            <label for="">Apuesta:</label>
+                            <label for="">Resultado:</label>
+                            <div class="caca">
+                                <!-- <h3 class="h3_resultado_win">GANASTE</h3> -->
+                            </div>
+                        </div>
+                        <div class="inputs_container">
+                            <input id="dado_apostado" type="text" >
+                            <input id="apuesta" type="text" >
+                            <input id="resultado_apuesta" type="text">
+                        </div>
+                    </div>
+                    <div class="resultado_imagen">
+                        <img class="img_resultado" src="/imgJuegos/dadoMuestra.jpg" alt="">
+                    </div>
+                </div>
+                <button id="jugar" class="btn_tirar" type="submit">Tirar</button>
+            </div> 
+        </main>
+    </div>
+    <h6 class="h6_compra">©Copyright todos los derechos estan reservados</h6>
+    <script src="/js/juegoDado.js"></script>
+</body>
+</html>

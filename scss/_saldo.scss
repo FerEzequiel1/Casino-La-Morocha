@@ -1,0 +1,34 @@
+.formulario_cargar_saldo{
+        width: 800px;
+        height: 300px;
+        background-color: $cuartiColor;
+        border-radius: 1rem;
+        padding: 1rem;
+        margin: auto;
+        margin-top:-15%;
+        div{
+            display: flex;
+            flex-direction: column;
+            margin-top: 1rem;
+            label{
+                color: $secundaryColor;
+                font-size: $textLG;
+                font-family: $secundariFont;
+            }
+            input{
+                font-size: $textMd;
+                background-color: $secundaryColor;
+                border-radius: 0.5rem;
+            }
+            button{
+                font-size: $textLG;
+                font-family: $secundariFont;
+                border-radius: .5rem;
+                width: 20%;
+                margin: auto;
+                margin-top: 1rem;
+            }
+
+        }
+        
+}

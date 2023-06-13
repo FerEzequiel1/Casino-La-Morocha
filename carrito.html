@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>La Morocha</title>
+</head>
+<body class="body_index_comprar">
+    <div class="div_index">
+        <header>
+            <nav class="nav_comprar">
+                <h1 class="title_index"><a class="nav_comprar_letras" href="index.html">Casino La Morocha</a>
+                <span class="span_comprar"><a class="nav_comprar_letras" href="index.html">Inicio</a></span>
+            </nav>
+        </header>
+        <main class="main_carrito">
+            <div id="contender_productos" class="contendor">
+                <div class="contenedor_filtros">
+                    <div >
+                        <h2 class="h2_comprar">Productos seleccionados</h2>
+                    </div>
+                    <div class="carrito_carrito" >
+                        <p><a href="comprar.html">Volver a la tienda</a></p>
+                        <div>
+                            <span class="material-symbols-outlined">
+                                <a href="carrito.html">shopping_cart_checkout</a> 
+                            </span>
+                            <samp class="numero_carrito">0</samp>
+
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div  class="contenedor_carrito">
+                <!-- se cargan los Productos mediante js usando los producostos seleccionados por el usuario guardados
+                en el local storage -->
+            </div> 
+            <!-- <div class="carro_vacio">
+                <p>Su carro esta vacio, no hay productos que mostrar.</p>
+            </div>-->
+            <div class="opciones_de_compra">
+                <div >
+                    <div> 
+                        <p>Precio total: <span id="precio_total">$0</span></p>
+                    </div>
+                    <div>
+                        <button class="btn_vaciar">Vaciar carrito</button>
+                    </div>
+                    <div>
+                        <button class="btn_cancelar"><a href="comprar.html">Cancelar</a></button>
+                    </div>
+                    <div>
+                        <button class="btn_comprar">Comprar</button>
+                    </div>
+                </div>  
+            </div> 
+           
+        </main>
+    </div>
+
+    <h6 class="h6_compra">©Copyright todos los derechos estan reservados</h6>
+
+    <script src="js/carrito.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+</body>
+</html>

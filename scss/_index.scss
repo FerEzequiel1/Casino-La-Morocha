@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.body_index{
+    background-color: $mainColor;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .div_index{
+        height: 80%;
+
+        header{
+            background-color:#000;
+            height: 10%;
+            margin-top: 0;
+            position: relative;
+            nav{
+                position: absolute;
+                width: 100%;
+                top: 25%;
+                .title_index{
+                    font-family: $mainFont;
+                    font-size: $textLG;
+                    text-align: center;
+                    color: $secundaryColor;
+                    .index_titulo{
+                        color: aliceblue;
+                    }
+                    
+                }
+            }
+        }
+        .main_index{
+            display: flex;
+            margin-top: 5%;
+            gap: 5px;
+            height:70%;
+
+
+            .div_comprar_index{
+                background-image: url(/imagenesIndex/R.jpeg);
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+                position: relative;
+                .a_index{
+                    text-align: center;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    font-size: 2rem;
+                    color: #000;
+                    text-shadow: 3px 1px $secundaryColor;
+                    text-decoration: none;
+
+                }
+            }
+            .div_jugar_index{
+                background-image: url(/imagenesIndex/jugarInicio.jpeg);
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+                position: relative;
+                .a_index{
+                    text-align: center;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    font-size: 2rem;
+                    color: #000;
+                    text-shadow: 3px 1px $secundaryColor;
+                    text-decoration: none;
+
+                }
+            }
+        }
+
+    }
+    .h6_index{
+        text-align: center;
+    }
+
+    
+}

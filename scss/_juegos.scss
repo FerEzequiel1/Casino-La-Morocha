@@ -1,0 +1,48 @@
+body{
+    .div_index{
+
+        .introducion_juegos{
+            margin-left: 1rem;
+            .h2_juegos{
+                color: $secundaryColor;
+                font-size: 3rem;
+            }
+            .p_juego{
+                color: $secundaryColor;
+                font-size: $textLG;
+            }
+        }
+        .juegos_container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 2rem;
+            padding: 1rem;
+            .juego{
+                height: 200px;
+                overflow: hidden;
+                position: relative;
+                
+                img{
+                    
+                    width: 100%;
+                    height: 100%;
+                    
+                }
+                a{
+                   position: absolute;
+                   top: 50%;
+                   left: 50%;
+                   font-size: 3rem;
+                   font-family: $mainFont;
+                   color: $secundaryColor;
+                   transform: translate(-50%,-50%);
+
+                }
+            }
+
+        }
+        
+    }
+}
+
+
