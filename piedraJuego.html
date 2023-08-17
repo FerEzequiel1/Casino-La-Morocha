@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>La Morocha</title>
+</head>
+<body class="body_index_comprar">
+    <div class="div_index">
+        <header>
+            <nav class="nav_comprar">
+                <h1 class="title_index"><a class="nav_comprar_letras" href="index.html">Casino La Morocha</a>
+                <span class="span_comprar"><a class="nav_comprar_letras" href="index.html">Inicio</a></span>
+                <div class="saldo_container span_comprar2" >
+                    <span  style="color: aliceblue;">Saldo:</span>
+                    <input id="input_saldo" type="number" disabled="" >
+                    <button><a href="saldo.html">Cargar saldo</a></button>
+                </div>
+            </nav>
+        </header>
+        <div class="reglas-piedra">
+            <h2 class="titulo_juego_piedra">Piedra,papel o tijeras</h2>
+            <p class="introduccion_juego_piedra"> Debe seleccionar una de las 3 opciones (Piedra,Papel o Tijeras) el cual sera enfrentado con nuestra selección.
+                El primero que llega a 5 victorias gana. Si usted gana se lleva como premio el doble de lo apostado,de lo contrario gana la casa
+            </p>
+        </div>
+        <div class="contendor-apuesta-piedra">
+            <label class="label-piedra" for="">Apuesta</label>
+            <input type="text" id="apuesta-piedra">
+            <label class="label-piedra" for="">Resultado</label>
+            <input type="text" id="resultado-piedra">
+        </div>
+        <div class="contenderPiedra">
+            <main class="main_juego_piedra">
+                <p class="instrucciones" id="instrucciones">
+                    Piedra,papel o tijera.
+                    El primero en llegar a 5 puntos gana.
+                </p>
+                <div class="marcador">
+                    <p class="nombre nombre-jugador">Jugador</p>
+                    <p class="nombre nombre-computadora">Casa</p>
+                    <p class="puntos">
+                        <span id="puntos-usuario">0</span>
+                        <span>-</span>
+                        <span id="puntos-computadora">0</span>
+                    </p>
+                </div>
+                <div class="elegi-tu-arma" id="elegi-tu-arma">
+                    <h2>Elegí tu arma para el próximo turno</h2>
+                    <div class="armas">
+                        <button class="arma" id="piedra🗿">🗿</button>
+                        <button class="arma" id="papel📋">📋</button>
+                        <button class="arma" id="tijera✂️">✂️</button>
+                    </div>
+                </div>
+                <div class="mensaje disabled" id="mensaje">
+                    <p class="resultados-dados">
+                        Usaste <span class="eleccion" id="eleccion-usuario">papel📋</span><br>
+                        y la computadora usó <span class="eleccion" id="eleccion-computadora">piedra🗿</span>
+                    </p>
+                    <p class="resultados-text" id="gana-punto">¡Ganaste un punto! 🔥</p>
+                </div>
+                <button class="btn disabled" id="reiniciar">Reiniciar juego</button>
+            </main>
+        </div>
+       
+    </div>
+    <h6 class="h6_compra">©Copyright todos los derechos estan reservados</h6>
+    <script src="/js/juegoPiedra.js"></script>
+</body>
+</html>

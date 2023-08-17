@@ -22,8 +22,6 @@ function jugar(){
     let apuesta = document.querySelector("#apuesta").value;
     saldo = JSON.parse(localStorage.getItem("saldo"));
 
-    console.log(apuesta)
-
     if (apuesta>saldo || apuesta == 0 || apuesta == ""  || isNaN(apuesta)){
         alert("Debes realizar una apuesta mayor o igual a su saldo actual.")
     }

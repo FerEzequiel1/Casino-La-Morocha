@@ -8,6 +8,7 @@ const OPCIONES_DE_COMPRA = document.querySelector(".opciones_de_compra")
 
 const VACIAR_CARRITO = document.querySelector(".btn_vaciar");
 const COMPRAR = document.querySelector(".btn_comprar");
+
 let btn_eliminar = document.querySelectorAll(".producto_carrito_eliminar");
 
 
@@ -30,40 +31,42 @@ else{
 
 
 function cargarCarrito(productos){
-    CONTENDOR.innerHTML="";
-    productos.forEach(producto => {
-        
-        const div = document.createElement("div");
-        div.classList.add("carrito_items");
-        div.innerHTML =`
-                    <img src=${producto.imagen} alt="">
-                    <div class="div_1">
-                        <strong>Producto:</strong>
-                        <h3>${producto.titulo}</h3>
-                    </div>
-                    <div class="div_2">
-                        <strong>Cantidad:</strong>
-                        <p>${producto.cantidad}</p>
-                    </div>
-                    <div class="div_2">
-                        <strong>Precio:</strong>
-                        <p>${producto.precio}</p>
-                    </div>
-                    <div class="div_3">
-                        <strong>Sub total:</strong>
-                        <p>${producto.precio*producto.cantidad}</p>
-                    </div>
-                    <button class="producto_carrito_eliminar" id="${producto.id}">
-                        <span class="material-symbols-outlined">
-                            delete_sweep
-                        </span>
-                    </button>
-        `
-        precio_total += producto.precio * producto.cantidad
-        PRECIO_TOTAL.innerText = "$"+precio_total
-        CONTENDOR.append(div);
-    });
-}
+   
+        CONTENDOR.innerHTML="";
+        productos.forEach(producto => {
+            
+            const div = document.createElement("div");
+            div.classList.add("carrito_items");
+            div.innerHTML =`
+                        <img src=${producto.imagen} alt="">
+                        <div class="div_1">
+                            <strong>Producto:</strong>
+                            <h3>${producto.titulo}</h3>
+                        </div>
+                        <div class="div_2">
+                            <strong>Cantidad:</strong>
+                            <p>${producto.cantidad}</p>
+                        </div>
+                        <div class="div_2">
+                            <strong>Precio:</strong>
+                            <p>${producto.precio}</p>
+                        </div>
+                        <div class="div_3">
+                            <strong>Sub total:</strong>
+                            <p>${producto.precio*producto.cantidad}</p>
+                        </div>
+                        <button class="producto_carrito_eliminar" id="${producto.id}">
+                            <span class="material-symbols-outlined">
+                                delete_sweep
+                            </span>
+                        </button>
+            `
+            precio_total += producto.precio * producto.cantidad
+            PRECIO_TOTAL.innerText = "$"+precio_total
+            CONTENDOR.append(div);
+        });
+    }
+
 
 if (PRODUCTOS_EN_CARRITO != null){
     cargarCarrito(PRODUCTOS_EN_CARRITO);
@@ -98,11 +101,21 @@ VACIAR_CARRITO.addEventListener("click",(e)=>{
       
 })
 COMPRAR.addEventListener("click",(e)=>{
-    borrar_estorage();
-    carro_vacio("s");
-    CONTENDOR.remove();
-    
-});
+    Swal.fire({
+        title: 'Compra realizada.',
+        text: "Muchas gracias por hacer su compra 😊😊",
+        icon: 'success',
+        confirmButtonColor: '#3085d6',
+        confirmButtonText: 'Continuar'
+      }).then((result) => {
+        if (result.isConfirmed) {
+            borrar_estorage();
+            carro_vacio("s");
+            CONTENDOR.remove();
+            location.reload();
+        }   
+    });
+})
 
 function borrar_estorage(){
     localStorage.removeItem('numero_carro');
@@ -120,8 +133,25 @@ function eliminar_producto_carrito(e){
     let id_btn_eliminar = e.currentTarget.id;
     let index_producto_eliminar = PRODUCTOS_EN_CARRITO.findIndex(producto => producto.id == id_btn_eliminar);
 
+    let cantidad_eliminada = (PRODUCTOS_EN_CARRITO[index_producto_eliminar].cantidad)
+    numero_carrito -= cantidad_eliminada
+
     PRODUCTOS_EN_CARRITO.splice(index_producto_eliminar,1)
     cargarCarrito(PRODUCTOS_EN_CARRITO);
+
+    if (PRODUCTOS_EN_CARRITO.length>0){
+        localStorage.setItem("carrito",JSON.stringify(PRODUCTOS_EN_CARRITO));
+        console.log("se guardo")
+        location.reload();
+        localStorage.setItem("numero_carro",numero_carrito);
+    }
+    else{
+        borrar_estorage()
+        location.reload();
+        console.log("se borro")
+        carro_vacio("v")
+    }
+    
 }
 
 function carro_vacio(opcion){

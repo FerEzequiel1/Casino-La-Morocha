@@ -415,6 +415,140 @@ body .div_index .juegos_container .juego a {
   margin-top: 5px;
 }
 
+.reglas-piedra {
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+}
+.reglas-piedra .titulo_juego_piedra {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  color: #eaf9f9;
+}
+.reglas-piedra .introduccion_juego_piedra {
+  font-size: 1.5em;
+  font-family: "Roboto", sans-serif;
+  color: #eaf9f9;
+  margin-top: 0.5rem;
+}
+
+.contendor-apuesta-piedra {
+  display: flex;
+  justify-content: center;
+}
+.contendor-apuesta-piedra .label-piedra {
+  font-size: 1.5em;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  color: #eaf9f9;
+}
+.contendor-apuesta-piedra .gano {
+  color: green;
+  font-size: 1.3em;
+}
+.contendor-apuesta-piedra .perdio {
+  color: red;
+  font-size: 1.3em;
+}
+
+.contenderPiedra {
+  background-color: #a2b3b5;
+  width: 70%;
+  height: 80%;
+  margin-left: 18rem;
+  margin-top: 3rem;
+}
+.contenderPiedra .main_juego_piedra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+.contenderPiedra .main_juego_piedra .instrucciones {
+  margin-bottom: 2rem;
+  font-size: 1.5em;
+}
+.contenderPiedra .main_juego_piedra .marcador {
+  background-color: #484949;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #eaf9f9;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.contenderPiedra .main_juego_piedra .marcador .nombre {
+  position: absolute;
+  color: #eaf9f9;
+  background-color: #303435;
+  line-height: 1;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid #484949;
+}
+.contenderPiedra .main_juego_piedra .marcador .nombre-jugador {
+  right: 85%;
+}
+.contenderPiedra .main_juego_piedra .marcador .nombre-computadora {
+  left: 85%;
+}
+.contenderPiedra .main_juego_piedra .marcador .puntos {
+  font-size: 1.5em;
+}
+.contenderPiedra .main_juego_piedra .elegi-tu-arma {
+  font-size: 1.3em;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.contenderPiedra .main_juego_piedra .elegi-tu-arma .armas {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.contenderPiedra .main_juego_piedra .elegi-tu-arma .armas .arma {
+  font-size: 1.5em;
+  background-color: var(--clr-beige);
+  border: 0;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.contenderPiedra .main_juego_piedra .mensaje {
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+.contenderPiedra .main_juego_piedra .mensaje .resultados-dados {
+  font-size: 1.5em;
+}
+.contenderPiedra .main_juego_piedra .mensaje .resultados-dados .eleccion {
+  color: #484949;
+  background-color: #eaf9f9;
+  font-size: 1.3em;
+  border-radius: 0.25rem;
+  padding-inline: 0.25rem;
+}
+.contenderPiedra .main_juego_piedra .mensaje .resultados-text {
+  font-size: 1.5em;
+}
+.contenderPiedra .main_juego_piedra .btn {
+  border: 0;
+  line-height: 1;
+  background-color: #484949;
+  color: #eaf9f9;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.contenderPiedra .main_juego_piedra .disabled {
+  display: none;
+}
+
 .formulario_cargar_saldo {
   width: 800px;
   height: 300px;

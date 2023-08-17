@@ -1,0 +1,140 @@
+.reglas-piedra{
+    margin-left: .5rem;
+    margin-top: 1rem;
+
+    .titulo_juego_piedra{
+        font-size: 2rem;
+        font-family: $mainFont;
+        color: $secundaryColor;
+    }
+    .introduccion_juego_piedra{
+        font-size: $textLG;
+        font-family: $mainFont;
+        color: $secundaryColor;
+        margin-top: .5rem;
+    }
+
+}
+.contendor-apuesta-piedra{
+    display: flex;
+    justify-content: center;
+
+    .label-piedra{
+        font-size: $textLG;
+        margin-right: .5rem;
+        margin-left: .5rem;
+        color: $secundaryColor;
+    }
+    .gano {
+        color: green;
+        font-size: $textMd;
+       }
+    .perdio {
+        color: red;
+        font-size: $textMd;
+       }
+}
+.contenderPiedra{
+    background-color:$quinaryColor;
+    width: 70%;
+    height: 80%;
+    margin-left:18rem;
+    margin-top: 3rem;
+
+    .main_juego_piedra{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       padding: 2rem;
+       text-align: center;
+       .instrucciones{
+        margin-bottom: 2rem;
+        font-size: $textLG;
+       }
+       .marcador{
+        background-color: $mainColor;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        color:$secundaryColor;
+        font-weight: 600;
+        margin-bottom: 2rem;
+
+            .nombre{
+                position: absolute;
+                color: $secundaryColor;
+                background-color: $cuartiColor;
+                line-height: 1;
+                padding: .5rem;
+                border-radius: .5rem;
+                border: 2px solid $mainColor;
+            }
+            .nombre-jugador{
+                right: 85%;
+            }
+            .nombre-computadora{
+                left: 85%;
+            }
+            .puntos{
+                font-size: $textLG;
+            }
+       }
+       .elegi-tu-arma{
+            font-size: $textMd;
+            font-weight: 400;
+            margin-bottom: .5rem;
+
+            .armas{
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+
+                .arma{
+                    font-size: $textLG;
+                    background-color: var(--clr-beige);
+                    border: 0;
+                    padding: .5rem;
+                    border-radius: .5rem;
+                    cursor: pointer;
+                }
+            }
+       }
+       .mensaje{
+            margin-bottom: 2rem;
+            line-height: 1.8;
+
+            .resultados-dados{
+
+                font-size: $textLG;
+                .eleccion{
+                    color: $mainColor;
+                    background-color: $secundaryColor;
+                    font-size: $textMd;
+                    border-radius: .25rem;
+                    padding-inline: .25rem;
+                }
+            }
+            .resultados-text{
+                font-size: $textLG;
+            }
+       }
+       .btn{
+            border: 0;
+            line-height: 1;
+            background-color: $mainColor;
+            color: $secundaryColor;
+            font-size: 1rem;
+            padding: .5rem;
+            border-radius: .5rem;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: 600;
+       }
+       .disabled {
+        display: none;
+       }
+    }
+}
