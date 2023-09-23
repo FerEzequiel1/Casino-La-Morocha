@@ -300,6 +300,15 @@
   color: #484949;
 }
 
+body .div_index header nav .span-juego {
+  position: absolute;
+  left: 8%;
+  bottom: 0;
+  font-family: "Roboto", sans-serif;
+}
+body .div_index header nav .span-juego a {
+  color: #eaf9f9;
+}
 body .div_index .introducion_juegos {
   margin-left: 1rem;
 }

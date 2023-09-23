@@ -1,5 +1,20 @@
 body{
     .div_index{
+        header{
+            nav{
+
+                .span-juego{
+                    position: absolute;
+                    left: 8%;
+                    bottom: 0;
+                    font-family: $mainFont;
+                    a{
+    
+                        color: $secundaryColor;
+                    }
+                }
+            }
+        }
 
         .introducion_juegos{
             margin-left: 1rem;
