@@ -62,37 +62,37 @@ function cambio_de_imagen(dado){
         case 1:
             IMAGEN_RESULTADO.innerHTML = "";
             IMAGEN_RESULTADO.innerHTML = `
-            <img class="img_resultado" src="/imgJuegos/dado1.jpg" alt=""></img>
+            <img class="img_resultado" src="imgJuegos/dado1.jpg" alt=""></img>
             `
             break;
         case 2:
             IMAGEN_RESULTADO.innerHTML = "";
             IMAGEN_RESULTADO.innerHTML = `
-            <img class="img_resultado" src="/imgJuegos/dado2.jpg" alt=""></img>
+            <img class="img_resultado" src="imgJuegos/dado2.jpg" alt=""></img>
             `
             break;
         case 3:
             IMAGEN_RESULTADO.innerHTML = "";
             IMAGEN_RESULTADO.innerHTML = `
-            <img class="img_resultado" src="/imgJuegos/dado3.jpg" alt=""></img>
+            <img class="img_resultado" src="imgJuegos/dado3.jpg" alt=""></img>
             `
             break;
         case 4:
             IMAGEN_RESULTADO.innerHTML = "";
             IMAGEN_RESULTADO.innerHTML = `
-            <img class="img_resultado" src="/imgJuegos/dado4.jpg" alt=""></img>
+            <img class="img_resultado" src="imgJuegos/dado4.jpg" alt=""></img>
             `
             break;        
         case 5:
             IMAGEN_RESULTADO.innerHTML = "";
             IMAGEN_RESULTADO.innerHTML = `
-            <img class="img_resultado" src="/imgJuegos/dado5.jpg" alt=""></img>
+            <img class="img_resultado" src="imgJuegos/dado5.jpg" alt=""></img>
             `
             break;    
         case 6:
             IMAGEN_RESULTADO.innerHTML = "";
             IMAGEN_RESULTADO.innerHTML = `
-            <img class="img_resultado" src="/imgJuegos/dado6.jpg" alt=""></img>
+            <img class="img_resultado" src="imgJuegos/dado6.jpg" alt=""></img>
             `
             break;
     }
