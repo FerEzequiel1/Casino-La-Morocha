@@ -13,7 +13,7 @@ productos=[
     {
         "id":"dadoNegro",
         "titulo": "Dado amateur negro",
-        "imagen":"/imgProductos/dadosNegros.jpg",
+        "imagen":"imgProductos/dadosNegros.jpg",
         "categoria":{
             "nombre": "Dados",
             "id":"dado"
@@ -24,7 +24,7 @@ productos=[
     {
         "id":"dadoVerde",
         "titulo": "Dado profesional verde",
-        "imagen":"/imgProductos/dadoVerde.jpg",
+        "imagen":"imgProductos/dadoVerde.jpg",
         "categoria":{
             "nombre": "Dados",
             "id":"dado"
@@ -35,7 +35,7 @@ productos=[
     {
         "id":"dadoAmarillo",
         "titulo": "Dado profesional amarillo",
-        "imagen":"/imgProductos/dadosAmarillos.jpg",
+        "imagen":"imgProductos/dadosAmarillos.jpg",
         "categoria":{
             "nombre": "Dados",
             "id":"dado"
@@ -46,7 +46,7 @@ productos=[
     {
         "id":"cartaDePoker",
         "titulo": "Cartas de poker",
-        "imagen":"/imgProductos/poker.jpg",
+        "imagen":"imgProductos/poker.jpg",
         "categoria":{
             "nombre": "Cartas",
             "id":"carta"
@@ -57,7 +57,7 @@ productos=[
     {
         "id":"cartaDeBlackyack",
         "titulo": "Cartas de blackyack",
-        "imagen":"/imgProductos/cartasBlackyack.jpg",
+        "imagen":"imgProductos/cartasBlackyack.jpg",
         "categoria":{
             "nombre": "Cartas",
             "id":"carta"
@@ -68,7 +68,7 @@ productos=[
     {
         "id":"alfombra",
         "titulo": "Alfombra de ruleta rusa",
-        "imagen":"/imgProductos/alfombraRuleta.jpg",
+        "imagen":"imgProductos/alfombraRuleta.jpg",
         "categoria":{
             "nombre": "Accesorios",
             "id":"accesorios"
@@ -79,7 +79,7 @@ productos=[
     {
         "id":"alfombraDePoker",
         "titulo": "Alfombra de poker",
-        "imagen":"/imgProductos/alfombraPoker.jpg",
+        "imagen":"imgProductos/alfombraPoker.jpg",
         "categoria":{
             "nombre": "Accesorios",
             "id":"accesorios"
@@ -90,7 +90,7 @@ productos=[
     {
         "id":"cartaEspañola",
         "titulo": "Cartas española",
-        "imagen":"/imgProductos/españolas.jpg",
+        "imagen":"imgProductos/españolas.jpg",
         "categoria":{
             "nombre": "Cartas",
             "id":"carta"
@@ -101,7 +101,7 @@ productos=[
     {
         "id":"monedasCasino",
         "titulo": "Monedas de casino x100",
-        "imagen":"/imgProductos/monedas.jpg",
+        "imagen":"imgProductos/monedas.jpg",
         "categoria":{
             "nombre": "Monedas",
             "id":"otro"
@@ -112,7 +112,7 @@ productos=[
     {
         "id":"generalaJuego",
         "titulo": "Juego de mesa Generala",
-        "imagen":"/imgProductos/generala.jpg",
+        "imagen":"imgProductos/generala.jpg",
         "categoria":{
             "nombre": "Juegos de mesa",
             "id":"juego"
@@ -123,7 +123,7 @@ productos=[
     {
         "id":"dominoJuego",
         "titulo": "Juego de mesa Domino",
-        "imagen":"/imgProductos/domino.jpg",
+        "imagen":"imgProductos/domino.jpg",
         "categoria":{
             "nombre": "Juegos de mesa",
             "id":"juego"
@@ -134,7 +134,7 @@ productos=[
     {
         "id":"MonopoliJuego",
         "titulo": "Juego de mesa Monopoli",
-        "imagen":"/imgProductos/monopoli.jpg",
+        "imagen":"imgProductos/monopoli.jpg",
         "categoria":{
             "nombre": "Juegos de mesa",
             "id":"juego"
@@ -145,7 +145,7 @@ productos=[
     {
         "id":"maletinDePoker",
         "titulo": "Maletin de poker completo",
-        "imagen":"/imgProductos/cofreDePoker.jpg",
+        "imagen":"imgProductos/cofreDePoker.jpg",
         "categoria":{
             "nombre": "Juegos de mesa",
             "id":"juego"
@@ -156,7 +156,7 @@ productos=[
     {
         "id":"mezcladora",
         "titulo": "Mezcladora de cartas",
-        "imagen":"/imgProductos/mezcladora.jpg",
+        "imagen":"imgProductos/mezcladora.jpg",
         "categoria":{
             "nombre": "Accesorios",
             "id":"accesorios"
@@ -167,7 +167,7 @@ productos=[
     {
         "id":"ruleta",
         "titulo": "Ruleta rusa",
-        "imagen":"/imgProductos/ruleta.jpg",
+        "imagen":"imgProductos/ruleta.jpg",
         "categoria":{
             "nombre": "Accesorios",
             "id":"accesorios"
