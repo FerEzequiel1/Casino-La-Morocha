@@ -2,7 +2,7 @@ productos=[
     {
         "id":"dadoRojo",
         "titulo": "Dado profesional rojo",
-        "imagen":"/imgProductos/dados.jpg",
+        "imagen":".../imgProductos/dados.jpg",
         "categoria":{
             "nombre": "Dados",
             "id":"dado"
