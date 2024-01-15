@@ -191,6 +191,7 @@
 .body_index_comprar div main .contendor .productos_container .productos button {
   border-radius: 10px;
   height: 30px;
+  cursor: pointer;
 }
 .body_index_comprar .h6_compra {
   margin-top: 20px;
